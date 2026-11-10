@@ -1,0 +1,13 @@
+{
+  "name": "@cleantext/cli",
+  "version": "1.2.0",
+  "description": "CLI CleanText — tanpa dependensi runtime selain @cleantext/core",
+  "type": "module",
+  "bin": {
+    "cleantext": "./bin/cleantext.js"
+  },
+  "dependencies": {
+    "@cleantext/core": "*"
+  },
+  "license": "MIT"
+}

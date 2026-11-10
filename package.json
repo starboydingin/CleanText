@@ -1,0 +1,33 @@
+{
+  "name": "cleantext",
+  "version": "1.2.0",
+  "private": true,
+  "description": "CleanText — Clean. Normalize. Simplify. Alat pembersih dan normalisasi teks.",
+  "type": "module",
+  "workspaces": [
+    "packages/core",
+    "packages/api",
+    "packages/cli",
+    "packages/web"
+  ],
+  "scripts": {
+    "dev": "concurrently -n api,web -c red,gray \"npm run dev -w @cleantext/api\" \"npm run dev -w @cleantext/web\"",
+    "dev:api": "npm run dev -w @cleantext/api",
+    "dev:web": "npm run dev -w @cleantext/web",
+    "build": "npm run build -w @cleantext/web",
+    "start": "npm run start -w @cleantext/api",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "bench": "vitest bench --run",
+    "clean": "node packages/cli/bin/cleantext.js"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "fast-check": "^3.23.2",
+    "supertest": "^7.0.0",
+    "vitest": "^3.0.5"
+  },
+  "engines": {
+    "node": ">=18.17"
+  }
+}

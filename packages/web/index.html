@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="id" data-theme="kertas">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="CleanText — Clean. Normalize. Simplify. Bersihkan karakter tersembunyi, spasi khusus, dash, kutipan, dan sisa Markdown langsung di peramban." />
+    <meta name="theme-color" content="#F2F0E8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <title>CleanText — Clean. Normalize. Simplify.</title>
+    <script>
+      try {
+        var t = localStorage.getItem('cleantext:theme');
+        if (t) document.documentElement.dataset.theme = JSON.parse(t);
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

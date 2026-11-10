@@ -1,0 +1,11 @@
+{
+  "name": "CleanText",
+  "short_name": "CleanText",
+  "description": "Clean. Normalize. Simplify.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F2F0E8",
+  "theme_color": "#1D1D1B",
+  "lang": "id",
+  "icons": [{ "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}
